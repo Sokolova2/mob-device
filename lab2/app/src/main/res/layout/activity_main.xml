@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:circularflow_radiusInDP="50">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#888E93">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="322dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="648dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="35dp"
+            android:background="#111211"
+            android:ellipsize="middle"
+            android:text="На наступну сторінку"
+            android:textColor="#D6CECE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.208"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="413dp"
+            android:layout_height="74dp"
+            android:background="#888E93"
+            android:text="Розклад "
+            android:textAlignment="center"
+            android:textColor="#272626"
+            android:textSize="150px"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.24000001" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
