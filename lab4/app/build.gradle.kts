@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.lab3"
+    namespace = "com.example.lab4"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.lab3"
-        minSdk = 24
+        applicationId = "com.example.lab4"
+        minSdk = 21
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -59,9 +59,6 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.appcompat:appcompat:1.7.0")
-    implementation("com.google.android.material:material:1.12.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
