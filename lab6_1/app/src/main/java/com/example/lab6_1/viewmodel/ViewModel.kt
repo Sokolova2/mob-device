@@ -7,24 +7,24 @@ import kotlinx.coroutines.launch
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
-import com.example.lab6_1.api.fetchUsers
-import com.example.lab6_1.model.User
+import com.example.lab6_1.api.fetchProducts
+import com.example.lab6_1.model.Product
 
 
-class UserViewModel : ViewModel() {
-    var userList by mutableStateOf<List<User>>(emptyList())
+class ProductsViewModel : ViewModel() {
+    var productsList by mutableStateOf<List<Product>>(emptyList())
     var errorMessage by mutableStateOf("")
     var isLoading = mutableStateOf(false)
 
     init {
-        fetchUserList()
+        fetchProductList()
     }
 
-    fun fetchUserList() {
+    fun fetchProductList() {
         isLoading.value = true
         viewModelScope.launch {
             try {
-                userList = fetchUsers()
+                productsList = fetchProducts()
 
             } catch (e: Exception) {
                 Log.d("errorMessage", e.message.toString())

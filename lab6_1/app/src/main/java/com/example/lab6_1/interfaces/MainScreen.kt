@@ -6,13 +6,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.lab6_1.viewmodel.UserViewModel
+import com.example.lab6_1.viewmodel.ProductsViewModel
 
 @Composable
 fun MainScreen() {
-    val userViewModel: UserViewModel = viewModel()
+    val productsViewModel: ProductsViewModel = viewModel()
 
     Column(modifier = Modifier.padding(15.dp)) {
-        UserListScreen(userViewModel = userViewModel)
+        ProductsListScreen(productsViewModel = productsViewModel)
     }
 }
